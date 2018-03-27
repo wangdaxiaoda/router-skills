@@ -1,24 +1,13 @@
 <template>
-  <div>this is css
-      <p>{{mess}}</p>
-      <p v-if="isNow">you can see me now</p>
-      <p>{{person.name}}!!!{{person.age}}</p>
+  <div id="body">
+      <div id="left-menu">
+        <ul>
+          <li><router-link :to="'/css/css1'">css1</router-link></li>
+          <li><router-link :to="'/css/css2'">css2</router-link></li>
+        </ul>
+      </div>
+      <div id="content">
+        <router-view></router-view>
+      </div>
   </div>
 </template>
-
-<script>
-export default {
-  data() {
-    return {
-      mess: null,
-      isNow: false,
-      person: {}
-    }
-  },
-  created() {
-    this.mess = this.$route.query.mess;
-    this.isNow = this.$route.query.isNow;
-    this.person = this.$route.query.person;
-  }
-};
-</script>
