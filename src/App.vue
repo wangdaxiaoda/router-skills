@@ -2,7 +2,7 @@
   <div class="page">
     <div id="header">
       <ul>
-        <li class="header-menu"><router-link to="html">html</router-link></li>
+        <li class="header-menu"><router-link :to="{path: '/html'}">html</router-link></li>
         <li class="header-menu"><router-link :to="{path: '/js', query: {name: '123'}}">js</router-link></li>
         <li class="header-menu"><router-link :to="{path: '/css', query: {name: '123'}}">css</router-link></li>
       </ul>
@@ -62,5 +62,24 @@ body {
   list-style: none;
   text-align: center;
   border: 1px dotted;
+}
+
+#left-menu {
+  width: 200px;
+  text-align: center;
+}
+
+.left-menu-item {
+}
+
+#content {
+  position: absolute;
+  left: 200px;
+  right: 0;
+  bottom: 0;
+  top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 </style>
