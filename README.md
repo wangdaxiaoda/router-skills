@@ -1,7 +1,7 @@
 # router-skills
 基础路由的实现
 
-代码分割+懒加载（按需加载）<a href="https://router.vuejs.org/zh-cn/advanced/lazy-loading.html">官方文档说明</a>
+代码分割+懒加载（按需加载）<a href="https://router.vuejs.org/zh-cn/advanced/lazy-loading.html" target="_blank">官方文档说明</a>
 ------
 ```javascript
 const css = r => require.ensure([], () => r(require('@/components/css/css')), 'css')
